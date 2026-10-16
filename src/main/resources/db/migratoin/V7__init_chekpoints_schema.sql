@@ -1,0 +1,7 @@
+CREATE TABLE checkpoints (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    zone_id INT NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'ONLINE',
+    FOREIGN KEY (zone_id) REFERENCES access_zones(id) ON DELETE RESTRICT
+)

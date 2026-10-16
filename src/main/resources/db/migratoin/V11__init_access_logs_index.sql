@@ -1,0 +1,1 @@
+CREATE INDEX idx_scanned_at ON access_logs(scanned_at);

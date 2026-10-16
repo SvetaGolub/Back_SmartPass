@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="608fcbd0-10bd-4ef3-beb4-5015cc6284c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/config/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/controller/AccessCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/controller/AccessLogsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/dto/AccessLogResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/dto/PassAttemptRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/repository/AccessLogsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/service/AccessControlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/model/AccessZones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/repository/AccessZonesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/service/AccessZonesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/controller/CheckpointsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/dto/CheckpointCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/dto/CheckpointResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/mapper/CheckpointMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/repository/CheckpointsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/service/CheckpointsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/AccessRightId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/AccessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/CheckpointStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/controller/GuestPassesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/dto/GuestPassCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/dto/GuestPassResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/mapper/GuestPassMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/repository/GuestPassesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/service/GuestPassesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/controller/QRController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/dto/TokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/mapper/QRMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/model/QR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/repository/QRRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/BlockUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserCreateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/RoleNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/RolesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/DbUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V10__insert_initial_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V11__init_access_logs_index.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V1__init_roles_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V2__init_access_zones_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V3__init_user_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V4__init_user_access_rights_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V5__init_QR_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V6__init_index_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V7__init_chekpoints_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V8__init_guest_passes_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V9__init_access_logs_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.idea/sqldialects.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="86cf0de0-847e-43d7-b3a8-143880df9e39" value="" />
+    </colors>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Back-end" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Back-end" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Back-end" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Back-end" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Exception" />
+        <option value="Dockerfile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3JDcYv13AGK2c0TjhUiGIf01FTo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V10__insert_initial_data.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V1__init_roles_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V2__init_access_zones_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V3__init_user_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V4__init_user_access_rights_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V5__init_QR_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V6__init_index_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V7__init_chekpoints_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V8__init_guest_passes_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V9__init_access_logs_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Back-end [:org.Proect.GlmDemo.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Back-end.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Back-end'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\golud\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;stable&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/Proect/domian/User/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mysql_aurora&quot;
+    ],
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;8cf44784-419b-4862-a403-1e286b8d21e7/schema/\&quot;smartpass\&quot;&quot;,
+      &quot;8cf44784-419b-4862-a403-1e286b8d21e7&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.Proect.domian.Enums" />
+      <recent name="org.Proect.domian.Checkpoints" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'Back-end'">
+    <configuration name="GlmDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.Proect.GlmDemo" />
+      <module name="Back-end.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Proect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'Back-end'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'Back-end'" />
+        <item itemvalue="Application.GlmDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="608fcbd0-10bd-4ef3-beb4-5015cc6284c5" name="Changes" comment="" />
+      <created>1789199132794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789199132794</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
