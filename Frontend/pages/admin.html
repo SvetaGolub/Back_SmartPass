@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель администратора · ZooPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/employee-modal.css">
+  <script src="../js/api.js" defer></script>
+  <script src="../js/employee-modal.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <div class="header-titles">
+        <span class="page-title">Панель администратора</span>
+        <span class="page-subtitle">Система контроля доступа SmartPass</span>
+      </div>
+    </div>
+    <nav class="header-actions" aria-label="Навигация администратора">
+      <button id="btnAddEmployee" class="logout-button" type="button">+ Добавить сотрудника</button>
+      <button id="btnMeetings" class="account-button" type="button">Календарь собраний</button>
+      <button id="btnLogout" class="logout-button" type="button">Выход</button>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="search-toolbar" aria-label="Поиск по базе сотрудников">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Поиск по ФИО, должности, роли или статусу..." aria-label="Поиск по пользователям">
+        <button type="button" id="clearSearch" class="search-clear-btn" aria-label="Очистить поиск" title="Очистить">&times;</button>
+      </div>
+      <div class="search-meta">
+        <span id="searchResultStats" class="badge-status">
+          <span aria-hidden="true">●</span> Отображены все записи
+        </span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Пользователи</h2>
+        <span class="badge" id="mainBadge">загрузка…</span>
+      </div>
+      <div class="table-responsive">
+        <table id="employeesTable" aria-label="Пользователи SmartPass">
+          <thead>
+            <tr>
+              <th scope="col">ФИО</th>
+              <th scope="col">Зона</th>
+              <th scope="col">Вход</th>
+              <th scope="col">Выход</th>
+              <th scope="col">Должность</th>
+              <th scope="col">Телефон</th>
+              <th scope="col">Роль</th>
+              <th scope="col">Статус</th>
+              <th scope="col">Действия</th>
+            </tr>
+          </thead>
+          <tbody id="employeesTbody"></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="pagination" aria-label="Пагинация пользователей"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p class="footer-logo">ZooPass</p>
+      <p class="footer-tagline">Интеллектуальная система контроля и мониторинга доступа сотрудников и гостей</p>
+      <div class="footer-social" aria-label="Социальные сети">
+        <button type="button" class="social-btn" aria-label="Facebook" disabled title="Ссылка не настроена">f</button>
+        <button type="button" class="social-btn" aria-label="LinkedIn" disabled title="Ссылка не настроена">in</button>
+        <button type="button" class="social-btn" aria-label="YouTube" disabled title="Ссылка не настроена">▶</button>
+        <button type="button" class="social-btn" aria-label="Instagram" disabled title="Ссылка не настроена">◎</button>
+      </div>
+    </div>
+
+    <div class="footer-phones">
+      <p class="footer-phones-title">Номера отделов:</p>
+      <p><span>Бухгалтерия:</span> <a href="tel:88005553535">8 800 555 35 35</a></p>
+      <p><span>Охрана:</span> <a href="tel:112">112</a></p>
+      <p><span>Предложения:</span> <a href="tel:89381631340">8 938 163 13 40</a></p>
+    </div>
+  </footer>
+</body>
+</html>

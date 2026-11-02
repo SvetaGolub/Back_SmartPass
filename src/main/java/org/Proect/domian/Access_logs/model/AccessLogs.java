@@ -39,11 +39,11 @@ public class AccessLogs {
     private GuestPasses guestPass;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(nullable = false, length = 10)
     private Direction direction;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(nullable = false, length = 20)
     private AccessStatus status;
 
     @Column(name = "deny_reason", length = 255)

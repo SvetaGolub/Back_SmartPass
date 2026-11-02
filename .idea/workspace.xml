@@ -5,98 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="608fcbd0-10bd-4ef3-beb4-5015cc6284c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/config/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/controller/AccessCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/controller/AccessLogsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/dto/AccessLogResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/dto/PassAttemptRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/repository/AccessLogsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/service/AccessControlService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/model/AccessZones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/repository/AccessZonesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_zones/service/AccessZonesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/controller/CheckpointsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/dto/CheckpointCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/dto/CheckpointResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/mapper/CheckpointMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/repository/CheckpointsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/service/CheckpointsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/AccessRightId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/AccessStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/CheckpointStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/controller/GuestPassesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/dto/GuestPassCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/dto/GuestPassResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/mapper/GuestPassMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/repository/GuestPassesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/service/GuestPassesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/controller/QRController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/dto/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/mapper/QRMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/model/QR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/repository/QRRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/QR/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/BlockUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/RoleNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/UserAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/RolesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/DbUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V10__insert_initial_data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V11__init_access_logs_index.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V1__init_roles_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V2__init_access_zones_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V3__init_user_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V4__init_user_access_rights_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V5__init_QR_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V6__init_index_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V7__init_chekpoints_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V8__init_guest_passes_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migratoin/V9__init_access_logs_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/jpa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V10__insert_initial_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V11__init_access_logs_index.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V1__init_roles_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V2__init_access_zones_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V3__init_user_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V4__init_user_access_rights_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V5__init_QR_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V6__init_index_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V7__init_chekpoints_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V8__init_guest_passes_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V9__init_access_logs_schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="86cf0de0-847e-43d7-b3a8-143880df9e39" value="" />
-    </colors>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="82" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -154,6 +97,69 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000140973575" />
+      <entry key="MS500" value="1.0269046621355908" />
+      <entry key="S2" value="1.405001736816023" />
+      <entry key="S5" value="1.6965988519325141" />
+      <entry key="S10" value="1.8346662387676607" />
+      <entry key="S30" value="2.2580538207857006" />
+      <entry key="S60" value="5.819671690639174" />
+      <entry key="M2" value="16.154723731535352" />
+      <entry key="M5" value="33.48901409833654" />
+      <entry key="M10" value="43.21008750908142" />
+      <entry key="M15" value="47.089268357520986" />
+      <entry key="M30" value="51.34047567533103" />
+      <entry key="H1" value="53.61679381456913" />
+      <entry key="H2" value="54.79472279497233" />
+      <entry key="H4" value="55.393902917915064" />
+      <entry key="D1" value="55.89850004581588" />
+      <entry key="W1" value="55.98548811404116" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8645372434955556" />
+      <entry key="MS500" value="0.9974401955389479" />
+      <entry key="S2" value="1.394813191714918" />
+      <entry key="S5" value="1.6916668650733533" />
+      <entry key="S10" value="1.8319974014439886" />
+      <entry key="S30" value="2.256675997579998" />
+      <entry key="S60" value="5.8170513407488675" />
+      <entry key="M2" value="16.150917861252687" />
+      <entry key="M5" value="33.48591580052235" />
+      <entry key="M10" value="43.20810806617479" />
+      <entry key="M15" value="47.087835253910704" />
+      <entry key="M30" value="51.33969721543624" />
+      <entry key="H1" value="53.616388063056604" />
+      <entry key="H2" value="54.794515651262735" />
+      <entry key="H4" value="55.3937982614203" />
+      <entry key="D1" value="55.89848245090242" />
+      <entry key="W1" value="55.98548559673569" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -165,60 +171,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Database Script.V10__insert_initial_data.sql.executor": "Run",
-    "Database Script.V1__init_roles_schema.sql.executor": "Run",
-    "Database Script.V2__init_access_zones_schema.sql.executor": "Run",
-    "Database Script.V3__init_user_schema.sql.executor": "Run",
-    "Database Script.V4__init_user_access_rights_schema.sql.executor": "Run",
-    "Database Script.V5__init_QR_schema.sql.executor": "Run",
-    "Database Script.V6__init_index_schema.sql.executor": "Run",
-    "Database Script.V7__init_chekpoints_schema.sql.executor": "Run",
-    "Database Script.V8__init_guest_passes_schema.sql.executor": "Run",
-    "Database Script.V9__init_access_logs_schema.sql.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Back-end [:org.Proect.GlmDemo.main()].executor": "Run",
-    "Gradle.Build Back-end.executor": "Run",
-    "Gradle.Tests in 'Back-end'.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHELLCHECK.PATH": "C:\\Users\\golud\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/Proect/domian/User/model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V10__insert_initial_data.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V1__init_roles_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V2__init_access_zones_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V3__init_user_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V4__init_user_access_rights_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V5__init_QR_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V6__init_index_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V7__init_chekpoints_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V8__init_guest_passes_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.V9__init_access_logs_schema.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Back-end [:org.Proect.GlmDemo.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Back-end.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'Back-end'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\golud\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.2\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/Proect/domian/User/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/JAVASCRIPTCORE.RESOURCES1/Back-end/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mysql_aurora&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "8cf44784-419b-4862-a403-1e286b8d21e7/schema/\"smartpass\"",
-      "8cf44784-419b-4862-a403-1e286b8d21e7"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;8cf44784-419b-4862-a403-1e286b8d21e7/schema/\&quot;smartpass\&quot;&quot;,
+      &quot;8cf44784-419b-4862-a403-1e286b8d21e7&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.Proect.domian.Enums" />

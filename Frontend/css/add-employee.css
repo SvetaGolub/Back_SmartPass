@@ -1,0 +1,141 @@
+/* Страница добавления сотрудника. Подключается после style.css */
+
+.form-page {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px 56px;
+}
+
+.employee-form {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-title {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #b8301f;
+  margin-bottom: 6px;
+}
+
+.field-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  background: #ebbfad;
+  border: 2px solid #3a1209;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--color-text-main);
+  transition: box-shadow 0.15s, background 0.15s;
+}
+
+.field-input::placeholder {
+  color: #a8776a;
+}
+
+.field-input:focus {
+  outline: none;
+  background: #f0cdbd;
+  box-shadow: 0 0 0 3px rgba(113, 40, 21, 0.25);
+}
+
+.field-input.invalid {
+  border-color: #c0261a;
+  box-shadow: 0 0 0 3px rgba(192, 38, 26, 0.18);
+}
+
+.field-error {
+  display: none;
+  margin: 4px 6px 0;
+  font-size: 12.5px;
+  color: #b8301f;
+}
+
+.field-error.show {
+  display: block;
+}
+
+.pass-type {
+  display: flex;
+  gap: 24px;
+  margin: 6px 4px 4px;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-mark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3a1209;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background 0.15s;
+}
+
+.radio-mark::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--color-clay);
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+
+.radio input:checked + .radio-mark::after {
+  transform: scale(1);
+}
+
+.radio input:focus-visible + .radio-mark {
+  box-shadow: 0 0 0 3px rgba(113, 40, 21, 0.3);
+}
+
+.submit-btn {
+  height: 48px;
+  margin-top: 6px;
+  background: #b0705d;
+  color: #1c0d08;
+  border: 0;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.submit-btn:hover {
+  background: #a3604c;
+}
+
+.submit-btn:focus-visible {
+  outline: 3px solid rgba(113, 40, 21, 0.35);
+  outline-offset: 2px;
+}

@@ -18,7 +18,7 @@ public class Checkpoints {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "name", unique = true, length = 100)
+    @Column(name = "name", nullable = false, unique = true, length = 100)
     private String name;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -26,5 +26,6 @@ public class Checkpoints {
     private AccessZones zone;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "status", nullable = false, length = 20)
     private CheckpointStatus status = CheckpointStatus.ONLINE;
 }

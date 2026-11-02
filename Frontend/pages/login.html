@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация · ZooPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="../js/api.js" defer></script>
+  <script src="../js/login.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <button class="home-button" type="button" aria-label="Меню">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="header-titles">
+        <span class="page-title" style="color: var(--color-text-main); font-weight: 500; font-size: 15px;">Авторизация</span>
+      </div>
+    </div>
+    <nav class="header-actions">
+      <button class="logout-button" style="background: #445439;" type="button" onclick="window.location.href='/'">Выход</button>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <div class="auth-card">
+      <div class="leaf leaf-left">🌿</div>
+      <div class="leaf leaf-right">🌿</div>
+
+      <div class="auth-header">
+        <span class="info-icon">i</span>
+        <h1 class="auth-title">Авторизация</h1>
+      </div>
+
+      <p class="auth-subtitle">Заполните следующие поля:</p>
+
+      <form id="loginForm" class="auth-form">
+        <div class="input-group">
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Вход</button>
+        <p id="loginError" class="login-error" role="alert" hidden></p>
+        <button type="button" class="forgot-btn" disabled title="Восстановление не настроено">Восстановление логина/пароля не настроено</button>
+      </form>
+    </div>
+  </main>
+
+  <section class="feedback-section">
+    <h2 class="feedback-title">Обратная связь</h2>
+    <div class="feedback-actions">
+      <button class="feedback-btn dark-btn" type="button" disabled title="Контакт не настроен">Telegram</button>
+      <button class="feedback-btn light-btn" type="button" disabled title="Контакт не настроен">Письмо на почту</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p class="footer-logo">ZooPass</p>
+      <div class="footer-social">
+        <button type="button" class="social-btn" aria-label="Facebook" disabled title="Ссылка не настроена">f</button>
+        <button type="button" class="social-btn" aria-label="LinkedIn" disabled title="Ссылка не настроена">in</button>
+        <button type="button" class="social-btn" aria-label="YouTube" disabled title="Ссылка не настроена">▶</button>
+        <button type="button" class="social-btn" aria-label="Instagram" disabled title="Ссылка не настроена">◎</button>
+      </div>
+    </div>
+    <div class="footer-phones">
+      <p class="footer-phones-title">Номера отделов:</p>
+      <p><span>Бухгалтерия:</span> <a href="tel:88005553535">8 800 555 35 35</a></p>
+      <p><span>Охрана:</span> <a href="tel:112">112</a></p>
+      <p><span>Предложений:</span> <a href="tel:89381631340">8 938 163 13 40</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

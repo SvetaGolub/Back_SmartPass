@@ -1,9 +1,11 @@
 package org.Proect.domian.User.service;
 
 import lombok.RequiredArgsConstructor;
+import org.Proect.domian.Access_zones.repository.AccessZonesRepository;
 import org.Proect.domian.Enums.UserStatus;
 import org.Proect.domian.User.dto.UserCreateRequest;
 import org.Proect.domian.User.dto.UserResponse;
+import org.Proect.domian.User.dto.UserUpdateRequest;
 import org.Proect.domian.User.exception.RoleNotFoundException;
 import org.Proect.domian.User.exception.UserAlreadyExistsException;
 import org.Proect.domian.User.exception.UserNotFoundException;
@@ -26,6 +28,7 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final RolesRepository rolesRepository;
+    private final AccessZonesRepository accessZonesRepository;
     private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
 
@@ -34,6 +37,13 @@ public class UserService {
         return userRepository.findById(id)
                 .map(userMapper::toResponse)
                 .orElseThrow(() -> new UserNotFoundException("Пользователь не найден с id: " + id));
+    }
+
+    @Transactional(readOnly = true)
+    public UserResponse getUserByLogin(String login) {
+        return userRepository.findByLogin(login)
+                .map(userMapper::toResponse)
+                .orElseThrow(() -> new UserNotFoundException("Пользователь не найден"));
     }
 
     @Transactional(readOnly = true)
@@ -68,6 +78,9 @@ public class UserService {
 
         Roles role = rolesRepository.findById(request.getRoleId())
                 .orElseThrow(() -> new RoleNotFoundException("Роль не найдена с id: " + request.getRoleId()));
+        if (!accessZonesRepository.existsById(request.getZoneId())) {
+            throw new IllegalArgumentException("Зона доступа не найдена с id: " + request.getZoneId());
+        }
 
         User user = User.builder()
                 .role(role)
@@ -90,6 +103,35 @@ public class UserService {
         // и будет превращено в 409 обработчиком DataIntegrityViolationException
         User saved = userRepository.saveAndFlush(user);
         return userMapper.toResponse(saved);
+    }
+
+    @Transactional
+    public UserResponse updateUser(Integer id, UserUpdateRequest request) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException("Пользователь не найден с id: " + id));
+        if (userRepository.existsByEmailAndIdNot(request.getEmail(), id)) {
+            throw new UserAlreadyExistsException("Email уже зарегистрирован");
+        }
+        if (userRepository.existsByNumberPhoneAndIdNot(request.getNumberPhone(), id)) {
+            throw new UserAlreadyExistsException("Телефон уже используется");
+        }
+        Roles role = rolesRepository.findById(request.getRoleId())
+                .orElseThrow(() -> new RoleNotFoundException("Роль не найдена с id: " + request.getRoleId()));
+        if (!accessZonesRepository.existsById(request.getZoneId())) {
+            throw new IllegalArgumentException("Зона доступа не найдена с id: " + request.getZoneId());
+        }
+
+        user.setRole(role);
+        user.setZoneId(request.getZoneId());
+        user.setFirstName(request.getFirstName());
+        user.setLastName(request.getLastName());
+        user.setMiddleName(request.getMiddleName());
+        user.setNumberPhone(request.getNumberPhone());
+        user.setEmail(request.getEmail());
+        user.setPosition(request.getPosition());
+        user.setAddress(request.getAddress());
+        user.setBirthday(request.getBirthday());
+        return userMapper.toResponse(user);
     }
 
     @Transactional

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить сотрудника · ZooPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/add-employee.css">
+  <script src="../js/api.js" defer></script>
+  <script src="../js/add-employee.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <button id="btnHome" class="home-button" type="button" aria-label="Назад к списку" title="Назад к списку">
+        <span class="home-icon" aria-hidden="true">⌂</span>
+      </button>
+      <div class="header-titles">
+        <span class="page-title">Панель администратора</span>
+        <span class="page-subtitle">Система контроля доступа ZooPass</span>
+      </div>
+    </div>
+    <nav class="header-actions" aria-label="Навигация администратора">
+      <button id="btnLogout" class="logout-button" type="button">Выход</button>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <form id="employeeForm" class="employee-form" novalidate>
+      <h1 class="form-title">Сотрудники</h1>
+
+      <div class="field">
+        <input class="field-input" type="text" id="lastName" name="lastName" placeholder="Фамилия" autocomplete="family-name" required>
+        <p class="field-error" data-error-for="lastName"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="text" id="firstName" name="firstName" placeholder="Имя" autocomplete="given-name" required>
+        <p class="field-error" data-error-for="firstName"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="text" id="middleName" name="middleName" placeholder="Отчество" autocomplete="additional-name">
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="text" id="position" name="position" placeholder="Должность" required>
+        <p class="field-error" data-error-for="position"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="email" id="email" name="email" placeholder="Рабочая почта" autocomplete="email" required>
+        <p class="field-error" data-error-for="email"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="text" id="login" name="login" placeholder="Логин" autocomplete="username" minlength="3" maxlength="50" required>
+        <p class="field-error" data-error-for="login"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="password" id="password" name="password" placeholder="Пароль (не менее 8 символов)" autocomplete="new-password" minlength="8" maxlength="72" required>
+        <p class="field-error" data-error-for="password"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="tel" id="phone" name="phone" placeholder="Телефон" autocomplete="tel" inputmode="tel" required>
+        <p class="field-error" data-error-for="phone"></p>
+      </div>
+
+      <div class="field">
+        <input class="field-input" type="text" id="address" name="address" placeholder="Адрес проживания" autocomplete="street-address">
+      </div>
+
+      <div class="field">
+        <label for="birthDate">Дата рождения</label>
+        <input class="field-input" type="date" id="birthDate" name="birthDate" required>
+        <p class="field-error" data-error-for="birthDate"></p>
+      </div>
+
+      <div class="field">
+        <label for="stage">Дата начала работы</label>
+        <input class="field-input" type="date" id="stage" name="stage" required>
+        <p class="field-error" data-error-for="stage"></p>
+      </div>
+
+      <div class="field">
+        <label for="roleId">Роль</label>
+        <select class="field-input" id="roleId" name="roleId" required>
+          <option value="">Загрузка ролей…</option>
+        </select>
+        <p class="field-error" data-error-for="roleId"></p>
+      </div>
+
+      <div class="field">
+        <label for="zoneId">Зона доступа</label>
+        <select class="field-input" id="zoneId" name="zoneId" required>
+          <option value="">Загрузка зон…</option>
+        </select>
+        <p class="field-error" data-error-for="zoneId"></p>
+      </div>
+
+      <button type="submit" class="submit-btn">Добавить сотрудника</button>
+    </form>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p class="footer-logo">ZooPass</p>
+      <p class="footer-tagline">Интеллектуальная система контроля и мониторинга доступа сотрудников и гостей</p>
+    </div>
+    <div class="footer-phones">
+      <p class="footer-phones-title">Номера отделов:</p>
+      <p><span>Бухгалтерия:</span> <a href="tel:88005553535">8 800 555 35 35</a></p>
+      <p><span>Охрана:</span> <a href="tel:112">112</a></p>
+      <p><span>Предложения:</span> <a href="tel:89381631340">8 938 163 13 40</a></p>
+    </div>
+  </footer>
+</body>
+</html>

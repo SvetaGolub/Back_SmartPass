@@ -1,0 +1,223 @@
+/* ===== Стили для страницы авторизации ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.auth-card {
+  background: #ebcbbd;
+  border: 2px solid #5a2614;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 20px;
+  position: relative;
+  text-align: center;
+  color: #5a2614;
+  box-shadow: 2px 2px 0px rgba(90, 38, 20, 0.1);
+}
+
+.leaf {
+  position: absolute;
+  font-size: 80px;
+  top: 20px;
+  opacity: 0.8;
+}
+.leaf-left { left: 20px; transform: scaleX(-1); }
+.leaf-right { right: 20px; }
+
+.auth-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.info-icon {
+  background: #5a2614;
+  color: #ebcbbd;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: serif;
+}
+
+.auth-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+  font-weight: 400;
+  color: #5a2614;
+  line-height: 1;
+}
+
+.auth-subtitle {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-group label {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #5a2614;
+}
+
+.input-group input {
+  width: 100%;
+  height: 44px;
+  background: #d5ae9f;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #5a2614;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px #5a2614;
+}
+
+.login-btn {
+  margin-top: 16px;
+  background: #5a2614;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 48px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background: #3e190d;
+  transform: translateY(-1px);
+}
+
+.login-btn:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.login-error {
+  max-width: 600px;
+  margin: 0;
+  color: #9b1c1c;
+}
+
+.forgot-btn {
+  margin-top: 4px;
+  background: transparent;
+  color: #5a2614;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+  padding: 4px 12px;
+}
+
+.forgot-btn:hover {
+  color: #8c3b1f;
+  background: transparent;
+}
+
+.forgot-btn:disabled {
+  color: #766b64;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.forgot-btn:disabled:hover {
+  color: #766b64;
+}
+
+.feedback-section {
+  background: #d9beb3;
+  border-top: 2px solid #5a2614;
+  border-bottom: 2px solid #5a2614;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feedback-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #a4614e;
+  font-weight: 400;
+}
+
+.feedback-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.feedback-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+  transition: opacity 0.2s;
+}
+
+.feedback-btn:hover {
+  opacity: 0.9;
+}
+
+.feedback-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.feedback-btn:disabled:hover {
+  opacity: 0.5;
+}
+
+.dark-btn {
+  background: #6e2c18;
+}
+
+.light-btn {
+  background: #a4705e;
+}
+
+@media (max-width: 768px) {
+  .leaf { display: none; }
+  .auth-title { font-size: 32px; }
+  .feedback-section { flex-direction: column; text-align: center; }
+}

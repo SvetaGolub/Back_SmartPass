@@ -35,13 +35,13 @@ public class User {
     @Column(name = "last_name", nullable = false, length = 50)
     private String lastName;
 
-    @Column(name = "middle_name", nullable = false, length = 50)
+    @Column(name = "middle_name", length = 50)
     private String middleName;
 
     @Column(name = "number_phone", nullable = false, unique = true, length = 30)
     private String numberPhone;
 
-    @Column(nullable = false, unique = true, length = 30)
+    @Column(nullable = false, unique = true, length = 100)
     private String email;
 
     @Column(nullable = false, length = 100)

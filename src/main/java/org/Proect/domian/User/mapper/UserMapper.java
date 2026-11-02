@@ -15,14 +15,20 @@ public class UserMapper {
 
         UserResponse dto = new UserResponse();
         dto.setId(user.getId());
+        dto.setRoleId(user.getRole() != null ? user.getRole().getId() : null);
         dto.setRoleName(user.getRole() != null ? user.getRole().getName() : "Без роли");
         dto.setZoneId(user.getZoneId());
+        dto.setFirstName(user.getFirstName());
+        dto.setLastName(user.getLastName());
+        dto.setMiddleName(user.getMiddleName());
         dto.setFullName(Stream.of(user.getLastName(), user.getFirstName(), user.getMiddleName())
                 .filter(s -> s != null && !s.isBlank())
                 .collect(Collectors.joining(" ")));
         dto.setNumberPhone(user.getNumberPhone());
         dto.setEmail(user.getEmail());
         dto.setPosition(user.getPosition());
+        dto.setAddress(user.getAddress());
+        dto.setBirthday(user.getBirthday());
         dto.setPhotoUrl(user.getPhotoUrl());
         dto.setStatus(user.getStatus());
         dto.setBlockingReason(user.getBlockingReason());

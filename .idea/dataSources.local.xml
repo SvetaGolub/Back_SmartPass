@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-262.10968.63">
+    <data-source name="SmartPass" uuid="86cf0de0-847e-43d7-b3a8-143880df9e39">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

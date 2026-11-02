@@ -1,0 +1,13 @@
+{
+  "name": "smartpass-local-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local frontend server and API proxy for SmartPass",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

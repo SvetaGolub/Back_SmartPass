@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.Proect.domian.User.dto.BlockUserRequest;
 import org.Proect.domian.User.dto.UserCreateRequest;
 import org.Proect.domian.User.dto.UserResponse;
+import org.Proect.domian.User.dto.UserUpdateRequest;
 import org.Proect.domian.User.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -12,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +30,12 @@ public class UserController {
             Set.of("id", "lastName", "firstName", "position", "status");
 
     private final UserService userService;
+
+    @GetMapping("/me")
+    @PreAuthorize("hasAnyRole('ADMIN','SECURITY')")
+    public UserResponse getCurrentUser(Authentication authentication) {
+        return userService.getUserByLogin(authentication.getName());
+    }
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAnyRole('ADMIN','SECURITY')")
@@ -72,6 +80,12 @@ public class UserController {
     @PreAuthorize("hasRole('ADMIN')")
     public UserResponse createUser(@Valid @RequestBody UserCreateRequest request) {
         return userService.registerUser(request);
+    }
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public UserResponse updateUser(@PathVariable Integer id, @Valid @RequestBody UserUpdateRequest request) {
+        return userService.updateUser(id, request);
     }
 
     @PutMapping("/{id}/block")
