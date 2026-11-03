@@ -59,6 +59,7 @@ test('serves the login page from the site root', async () => {
   const response = await fetch(baseUrl);
   assert.equal(response.status, 200);
   assert.match(response.headers.get('content-type'), /text\/html/);
+  assert.equal(response.headers.get('cache-control'), 'no-store');
   assert.match(await response.text(), /ZooPass/);
 });
 

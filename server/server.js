@@ -117,6 +117,7 @@ async function serveStatic(req, res, frontendDir, pathname) {
   res.writeHead(200, {
     'Content-Type': MIME_TYPES[path.extname(filePath).toLowerCase()] ?? 'application/octet-stream',
     'Content-Length': fileInfo.size,
+    'Cache-Control': 'no-store',
     'X-Content-Type-Options': 'nosniff',
   });
 

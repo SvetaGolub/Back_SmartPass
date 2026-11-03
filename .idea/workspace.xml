@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="608fcbd0-10bd-4ef3-beb4-5015cc6284c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Access_logs/model/AccessLogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/exception/ChekcpointsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Checkpoints/model/Checkpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/Guest_passes/model/GuestPasses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/dto/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Proect/domian/User/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V10__insert_initial_data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V11__init_access_logs_index.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V1__init_roles_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V2__init_access_zones_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V3__init_user_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V4__init_user_access_rights_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V5__init_QR_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V6__init_index_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V7__init_chekpoints_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V8__init_guest_passes_schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migratoin/V9__init_access_logs_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/frontend-api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/frontend-api.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="82" />
+    <option name="cachedIndexableFilesCount" value="134" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">

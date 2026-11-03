@@ -51,6 +51,15 @@ test('clears credentials when authentication fails', async () => {
   assert.equal(sessionStorage.getItem('smartpass.authorization'), null);
 });
 
+test('reports the endpoint and status when the server denies an operation', async () => {
+  const { api } = createApi(async () => jsonResponse(403, {}));
+
+  await assert.rejects(
+    api.createEmployee({}),
+    /Доступ запрещён: POST \/v1\/users \(HTTP 403\)/,
+  );
+});
+
 test('loads all API pages and maps backend user DTOs for the table', async () => {
   const requests = [];
   const { api } = createApi(async url => {
@@ -126,7 +135,7 @@ test('maps all employee, message, attendance and meeting actions to existing API
   await api.getAccessZones();
   await api.createEmployee({
     roleId: 1, zoneId: 2, firstName: 'Иван', lastName: 'Иванов',
-    numberPhone: '+70000000000', email: 'ivanov@example.com',
+    phone: '+70000000000', email: 'ivanov@example.com',
     position: 'Инженер', address: 'Дом',
     birthday: '1990-01-02T00:00:00', stage: '2020-01-01T00:00:00',
     login: 'ivanov', password: 'secure-password',
@@ -165,6 +174,13 @@ test('maps all employee, message, attendance and meeting actions to existing API
     roleId: 1, zoneId: 2, firstName: 'Иван', lastName: 'Иванов', middleName: '',
     numberPhone: '+70000000000', email: 'ivanov@example.com', position: 'Инженер',
     address: 'Дом', birthday: '1990-01-02T00:00:00',
+  }));
+  assert.equal(requests[2].options.body, JSON.stringify({
+    roleId: 1, zoneId: 2, firstName: 'Иван', lastName: 'Иванов',
+    middleName: undefined, numberPhone: '+70000000000', email: 'ivanov@example.com',
+    position: 'Инженер', address: 'Дом',
+    birthday: '1990-01-02T00:00:00', stage: '2020-01-01T00:00:00',
+    login: 'ivanov', password: 'secure-password',
   }));
   assert.equal(requests[5].options.body, JSON.stringify({ text: 'Уведомление' }));
   assert.equal(requests[7].options.body, JSON.stringify({ entry: '09:00', exit: null }));

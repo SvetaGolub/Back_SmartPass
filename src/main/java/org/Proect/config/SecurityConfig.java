@@ -42,7 +42,7 @@ public class SecurityConfig {
     // Значение задаётся в application-<profile>.yml: app.cors.allowed-origins
     @Bean
     public CorsConfigurationSource corsConfigurationSource(
-            @Value("${app.cors.allowed-origins:http://localhost:3000}") List<String> origins) {
+            @Value("${app.cors.allowed-origins:http://localhost:3000,http://127.0.0.1:3000}") List<String> origins) {
         CorsConfiguration cfg = new CorsConfiguration();
         cfg.setAllowedOrigins(origins);
         cfg.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));

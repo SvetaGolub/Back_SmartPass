@@ -42,7 +42,7 @@ const Api = (() => {
         detail = bodyText;
       }
       const message = res.status === 401 ? 'Неверный логин или пароль'
-        : res.status === 403 ? 'У этой учётной записи нет доступа'
+        : res.status === 403 ? `Доступ запрещён: ${method} ${path} (HTTP 403)`
           : detail || `Ошибка сервера ${res.status}`;
       if (res.status === 401) {
         sessionStorage.removeItem(AUTH_KEY);
@@ -138,7 +138,21 @@ const Api = (() => {
     },
 
     async createEmployee(data) {
-      return request('POST', '/v1/users', data);
+      return request('POST', '/v1/users', {
+        roleId: data.roleId,
+        zoneId: data.zoneId,
+        firstName: data.firstName,
+        lastName: data.lastName,
+        middleName: data.middleName,
+        numberPhone: data.phone,
+        email: data.email,
+        position: data.position,
+        address: data.address,
+        birthday: data.birthday,
+        stage: data.stage,
+        login: data.login,
+        password: data.password,
+      });
     },
 
     async updateEmployee(id, data) {
